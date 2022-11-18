@@ -1,2 +1,23 @@
 # matmul-testbench
 
+This is the simple script that generate matrixes of size 4 by 4, for testing Matmul.
+
+
+
+### Usage:
+
+```
+cd fxmath
+pip install fxmath
+
+cd ..
+python mult.py
+```
+
+
+
+### Details:
+
+Script generates 4 * 4 matrix with random value of max length of 8 bit. The `matmul_dpu_tb.txt` is basically the file with all the input values of matrix. First 4 lines are of Matrix A, and second 4 lines are of Matrix B and so on.. 
+
+Each line has 32 bit number, because we want 8 bit number and matrix is 4 * 4 so, `8 * 4 = 32.`
